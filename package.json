@@ -1,0 +1,26 @@
+{
+  "name": "query-tools",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrameMuse/query-tools.git"
+  },
+  "keywords": [
+    "api query",
+    "query tools",
+    "ts",
+    "typescript"
+  ],
+  "author": "FrameMuse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrameMuse/query-tools/issues"
+  },
+  "homepage": "https://github.com/FrameMuse/query-tools#readme"
+}
