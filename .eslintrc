@@ -1,0 +1,68 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    // "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "ecmaVersion": "latest",
+    "requireConfigFile": false,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "unused-imports",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "default-case": "error",
+    "no-multi-spaces": "error",
+    "simple-import-sort/imports": "warn",
+    // "simple-import-sort/exports": "error",
+    "unused-imports/no-unused-imports": "warn",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "PropertyDefinition"
+        ]
+      }
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    // OFF
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "ban-types": "off"
+  },
+  "ignorePatterns": [
+    "node_modules/"
+  ]
+}
